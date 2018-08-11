@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Point = /** @class */ (function () {
     function Point(x, y) {
         this.x = x;
@@ -11,12 +11,16 @@ var Point = /** @class */ (function () {
     Point.prototype.distance = function (anotherPoint) {
         console.log('xx');
     };
-    Point.prototype.getX = function () {
-        return this.x;
-    };
-    Point.prototype.setX = function (value) {
-        this.y = value;
-    };
+    Object.defineProperty(Point.prototype, "X", {
+        get: function () {
+            return this.x;
+        },
+        set: function (value) {
+            this.y = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Point;
 }());
 exports.Point = Point;

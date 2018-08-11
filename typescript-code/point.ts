@@ -11,10 +11,10 @@ export class Point{
 
         console.log('xx');
     }
-    getX(){
+    get X(){
         return this.x;
     }
-    setX(value){
+    set X(value){
         this.y=value;
     }
 }
