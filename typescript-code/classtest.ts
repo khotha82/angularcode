@@ -1,8 +1,8 @@
-import {Point} from './point'
+import { Point } from './point'
 
-let p =new Point(1,2);
+let p = new Point(1, 2);
 
-let p1:Point=new Point(4);
+let p1: Point = new Point(4);
 console.log(p1.X);
 console.log('test autosave')
 p.draw();
