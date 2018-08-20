@@ -1,3 +1,4 @@
+import { ArgsInter } from './faviroite/faviroite.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-hello-world';
+  post={
+    title: "abc",
+    isFavorite :true
+  }
+  onFavChnage(isFavortie:ArgsInter){
+    console.log('changed'+isFavortie.isFav+" "+isFavortie.title);
+  }
 }
