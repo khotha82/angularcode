@@ -10,7 +10,12 @@ export class AppComponent {
   title = 'app-hello-world';
   post={
     title: "abc",
-    isFavorite :true
+    isFavorite :false
+  }
+  tweet={
+    body: 'this is body of the post',
+    isLiked: false,
+    count: 0
   }
   onFavChnage(isFavortie:ArgsInter){
     console.log('changed'+isFavortie.isFav+" "+isFavortie.title);

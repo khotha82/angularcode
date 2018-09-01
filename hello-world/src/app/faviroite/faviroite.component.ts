@@ -1,10 +1,20 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 
 @Component({
   selector: 'app-isFavortie',
   templateUrl: './faviroite.component.html',
-  styleUrls: ['./faviroite.component.css']
+ 
+  styles : [`
+  .glyphicon {
+    font-size: 100px;
+    color: blue
+}
+styleUrls: ['./faviroite.component.css'],
+
+  `],
+  encapsulation: ViewEncapsulation.Emulated
+  
 })
 export class FaviroiteComponent implements OnInit {
 

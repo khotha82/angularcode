@@ -1,0 +1,6 @@
+<div>
+    <ng-content select='.tweetText'></ng-content>
+</div>
+
+<span class='glyphicon glyphicon-heart' [class.deeppink]="isLiked" [class.grey]="!isLiked" (click)='onClick()'></span>
+<span>{{count}}</span>

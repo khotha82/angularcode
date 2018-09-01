@@ -7,13 +7,23 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { FaviroiteComponent } from './faviroite/faviroite.component';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { SwitchtestComponent } from './switchtest/switchtest.component';
+import { NgfortestComponent } from './ngfortest/ngfortest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     AuthorsComponent,
-    FaviroiteComponent
+    FaviroiteComponent,
+    PanelComponent,
+    LikeComponent,
+    DirectivesComponent,
+    SwitchtestComponent,
+    NgfortestComponent
   ],
   imports: [
     BrowserModule

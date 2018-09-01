@@ -1,0 +1,11 @@
+<div *ngIf="directors.length>0 then directorsnos;else nodirectors">
+
+</div>
+
+<ng-template #directorsnos>
+    list of directors using template
+</ng-template>
+
+<ng-template #nodirectors>
+    no directors using template
+</ng-template>
