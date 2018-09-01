@@ -1,3 +1,7 @@
-<p>
-  ngfortest works!
-</p>
+<button class='button btn-primary' (click)="add()">Add</button>
+<ul>
+    <li *ngFor="let course of courses index as i ">
+        <span>   {{i}} -- {{course.id}}--- {{course.name}} 
+          <button class="button btn-primary" style="color:red" (click)='remove(course)'>remove</button></span><br/>
+    </li>
+</ul>

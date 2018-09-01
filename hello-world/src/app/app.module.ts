@@ -12,6 +12,7 @@ import { LikeComponent } from './like/like.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SwitchtestComponent } from './switchtest/switchtest.component';
 import { NgfortestComponent } from './ngfortest/ngfortest.component';
+import { FormatdirectDirective } from './formatdirect.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgfortestComponent } from './ngfortest/ngfortest.component';
     LikeComponent,
     DirectivesComponent,
     SwitchtestComponent,
-    NgfortestComponent
+    NgfortestComponent,
+    FormatdirectDirective
   ],
   imports: [
     BrowserModule
