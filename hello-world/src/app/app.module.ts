@@ -13,6 +13,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { SwitchtestComponent } from './switchtest/switchtest.component';
 import { NgfortestComponent } from './ngfortest/ngfortest.component';
 import { FormatdirectDirective } from './formatdirect.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormatdirectDirective } from './formatdirect.directive';
     DirectivesComponent,
     SwitchtestComponent,
     NgfortestComponent,
-    FormatdirectDirective
+    FormatdirectDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule
