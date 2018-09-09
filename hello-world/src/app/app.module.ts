@@ -16,6 +16,7 @@ import { NgfortestComponent } from './ngfortest/ngfortest.component';
 import { FormatdirectDirective } from './formatdirect.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { CourseformComponent } from './courseform/courseform.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
     NgfortestComponent,
     FormatdirectDirective,
     ZippyComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    CourseformComponent
   ],
   imports: [
     BrowserModule,
