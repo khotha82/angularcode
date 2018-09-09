@@ -9,11 +9,13 @@ import { AuthorsComponent } from './authors/authors.component';
 import { FaviroiteComponent } from './faviroite/faviroite.component';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { FormsModule }   from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { SwitchtestComponent } from './switchtest/switchtest.component';
 import { NgfortestComponent } from './ngfortest/ngfortest.component';
 import { FormatdirectDirective } from './formatdirect.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +29,12 @@ import { ZippyComponent } from './zippy/zippy.component';
     SwitchtestComponent,
     NgfortestComponent,
     FormatdirectDirective,
-    ZippyComponent
+    ZippyComponent,
+    LoginFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [CoursesService,AuthorsService],
   bootstrap: [AppComponent]
