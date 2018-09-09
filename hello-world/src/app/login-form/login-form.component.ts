@@ -7,12 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginFormComponent  {
 
+  contactMethod = [
+    {id: 1, method: 'email'},
+    {id: 2, method: 'phone'}
+  ];
+  days = [{id: 1, day: 'sunday'},
+  {id: 2, day: 'monday'},
+  {id: 3, day: 'tuesday'}
+
+]
   constructor() { }
 
-  log(model){
+  log(model) {
     console.log(model);
   }
-  onSubmit(f){
+  onSubmit(f) {
     console.log(f);
   }
 }

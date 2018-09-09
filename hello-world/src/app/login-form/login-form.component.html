@@ -19,8 +19,32 @@
         </div>
 
         <br>
+        <div class='form-group'>
+            <label for="contactMethod'">
+            <select multiple id='contactMethod' ngModel name="contactMethod">
+              <option value=""></option>
+              <option *ngFor="let method of contactMethod" [ngValue]=method>{{method.method}}</option>
+            </select>
+          </label>
+        </div>
+        <div *ngFor="let day of days" class="radio">
+            <label for="dayOfWeek">
+            <input type="radio" ngModel name="dayOfWeek" [value]='day.id'>
+            {{day.day}}
+        </label>
+        </div>
         <div>
-            <button [disabled]="!f.form.valid" class="btn btn-primary">Submit</button>
+            <label>
+              <input type="checkbox" ngModel name="isSubscribed"> Subscribe for emails
+            </label>
+
+        </div>
+
+        <p>
+            {{f.value|json}}
+        </p>
+        <div>
+            <button [disabled]="!f.valid" class="btn btn-primary">Submit</button>
         </div>
     </div>
 </form>
